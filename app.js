@@ -4,7 +4,7 @@ var userName = document.getElementById("u_name");
 var title = document.getElementById("u_title");
 var description = document.getElementById("d_iscrip");
 var post = document.getElementById("t_post")
-var currentDateTime = new Date().toUTCString();
+var currentDateTime = new Date().toString();
 
 
 
