@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Application</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="contaner-flued">
+        <div class="justify-content-center text-center head ">
+            <h1>Create Post Application</h1>
+        </div>
+    </div>
+
+    <div id="login" class="container justify-content-start d-flex login postCard mt-5">
+        <div class="row">
+            <div class="col-md-12">
+
+                <div class="mb-3">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="u_name" aria-describedby="emailHelp"
+                        placeholder="enter your name">
+                </div>
+
+                <div class="mb-3">
+                    <label for="title" class="form-label"> Your Title</label>
+                    <input type="text" class="form-control" id="u_title">
+                </div>
+
+
+                <div class="mb-3">
+                    <label for="Disc" class="form-label"> Discription</label>
+                    <input type="text" class="form-control" id="d_iscrip">
+                </div>
+
+
+
+                <div class="mb-3">
+                    <label for="post" class="form-label"> Write your text massage</label>
+                  <textarea class="form-control posttext" name="post" id="t_post"></textarea> 
+                </div>
+
+              
+                <div class="mb-3">
+                    <label for="post" class="form-label "> Select background image</label><br>
+            <div class="mb-3  bgImagesContainer">
+    
+
+                        <img class="bg-image" onclick="selectedImage('bg1.avif')" src="assets/bg1.jpg" alt="">
+                        <img class="bg-image" onclick="selectedImage('bg2.jpg')" src="assets/bg2.jpg" alt="">
+                        <img class="bg-image" onclick="selectedImage('bg3.jpg')" src="assets/bg3.jpg" alt="">
+                        <img class="bg-image" onclick="selectedImage('bg4.JPG')" src="assets/BG4.jpg" alt="">
+                    </div>
+
+              </div>
+             
+            <button  onclick="submitPost()"  type="submit" class="btn btn-primary mt-2">Submit</button>
+            </div>
+        </div>
+
+
+    
+        <div id="listingContainer" class="listing-container">
+
+
+        </div>
+
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+
+
+   
+
+
+
+
+
+    <script src="boot.js"></script>
+    <script src="bundle.js"></script>
+    <script src="popper.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
